@@ -1,0 +1,42 @@
+.carrito {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.carrito h2 {
+    text-align: center;
+}
+.destino-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+.destino-item:last-child {
+    border-bottom: none;
+}
+.precio-original {
+    text-decoration: line-through;
+}
+.precio-oferta {
+    color: #4CAF50;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.boton:hover {
+    background-color: #45a049;
+}
+.acciones {
+    text-align: center;
+    margin-top: 20px;
+}

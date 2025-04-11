@@ -1,0 +1,29 @@
+.detalle-oferta {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    text-align: center;
+}
+.precio {
+    font-size: 24px;
+    margin: 20px 0;
+}
+.descuento {
+    color: #4CAF50;
+    font-size: 32px;
+    font-weight: bold;
+}
+.btn-agregar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.btn-agregar:hover {
+    background-color: #45a049;
+}

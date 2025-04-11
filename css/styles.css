@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.notificacion-oferta {
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+.notificacion-oferta:hover {
+    transform: scale(1.05);
+    background-color: #45a049;
+}
+
+.form-busqueda {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+.form-group {
+    display: inline-block;
+    width: 30%;
+    margin: 10px 1.5%;
+    vertical-align: top;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-busqueda button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-busqueda button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+.table-vuelos-hoteles {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.table-vuelos-hoteles th, .table-vuelos-hoteles td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-vuelos-hoteles th {
+    background-color: #007BFF;
+    color: white;
+    font-size: 18px;
+}
+
+.table-vuelos-hoteles td {
+    font-size: 16px;
+}
+
+.table-vuelos-hoteles tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table-vuelos-hoteles tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table-vuelos-hoteles .button-container {
+    text-align: center;
+}
+
+.table-vuelos-hoteles button {
+    padding: 6px 12px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.table-vuelos-hoteles button.view-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.table-vuelos-hoteles button.view-btn:hover {
+    background-color: #218838;
+}
+
+.table-vuelos-hoteles button.edit-btn {
+    background-color: #ffc107;
+    color: white;
+    border: none;
+}
+
+.table-vuelos-hoteles button.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.table-vuelos-hoteles button.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.table-vuelos-hoteles button.delete-btn:hover {
+    background-color: #c82333;
+}

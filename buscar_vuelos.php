@@ -74,6 +74,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 .boton-volver:hover {
                     background-color: #45a049;
                 }
+                .boton-reservar {
+                    display: block;
+                    margin: 20px auto;
+                    padding: 10px 20px;
+                    background-color:rgb(0, 115, 255);
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 16px;
+                }
+                .boton-reservar:hover {
+                    background-color: rgb(0, 61, 136);
+                }
             </style>
         </head>
         <body>
@@ -88,6 +103,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <th>Fecha</th>
                             <th>Plazas Disponibles</th>
                             <th>Precio (USD)</th>
+                            <th>Reservar</th>
                         </tr>";
                 while ($row = $result->fetch_assoc()) {
                     echo "<tr>
@@ -97,6 +113,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <td>{$row['fecha']}</td>
                             <td>{$row['plazas_disponibles']}</td>
                             <td>$" . number_format($row['precio'], 2) . "</td>
+                            <td><a href='#' class='boton-reservar'>Reservar</a></td>
                           </tr>";
                 }
                 echo "</table>";

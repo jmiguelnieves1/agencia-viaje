@@ -8,7 +8,7 @@
 <body>
     <?php 
         // Muestra notificación de oferta
-        mostrarNotificacionOferta($destinos); 
+        mostrarNotificacionOferta(); 
     ?>
 
     <!-- Enlace al carrito -->
@@ -16,6 +16,7 @@
         <a href="carrito.php" style="text-decoration:none; background-color:#4CAF50; color:white; padding:10px 20px; border-radius:5px;">Ver Carrito</a>
     </div>
 
+    <h2>Buscar Hoteles</h2>
     <form class="form-busqueda" method="POST" action="buscar.php">
         <div class="form-group">
             <label>Nombre del Hotel:</label>
@@ -42,6 +43,27 @@
             <input type="number" name="precio_max" min="0">
         </div>
         <button type="submit">Buscar Destinos</button>
+    </form>
+
+    <h2>Buscar Vuelos</h2>
+    <form class="form-busqueda" method="POST" action="buscar_vuelos.php">
+        <div class="form-group">
+            <label>Origen:</label>
+            <input type="text" name="origen" required>
+        </div>
+        <div class="form-group">
+            <label>Destino:</label>
+            <input type="text" name="destino" required>
+        </div>
+        <div class="form-group">
+            <label>Fecha de Salida:</label>
+            <input type="date" name="fecha_salida" required>
+        </div>
+        <div class="form-group">
+            <label>Cantidad de Pasajeros:</label>
+            <input type="number" name="pasajeros" min="1" required>
+        </div>
+        <button type="submit">Buscar Vuelos</button>
     </form>
 </body>
 </html>
